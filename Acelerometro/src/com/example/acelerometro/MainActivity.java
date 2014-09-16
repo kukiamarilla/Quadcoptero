@@ -10,6 +10,11 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
+
+/*
+ * Creado 16/09/2014
+ * @author Isaac Amarilla
+ * */
 public class MainActivity extends Activity implements SensorEventListener{
 	TextView x,y,res;
 	@Override
