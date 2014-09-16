@@ -1,3 +1,6 @@
+#Ignorar de proyectos JAVA
+*.class
+
 # Windows image file caches
 Thumbs.db
 ehthumbs.db
