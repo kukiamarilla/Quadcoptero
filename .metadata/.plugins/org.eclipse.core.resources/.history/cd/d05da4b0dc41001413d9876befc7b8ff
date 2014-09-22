@@ -1,0 +1,11 @@
+package com.example.tetra_joystick;
+
+import android.app.*;
+import android.os.*;
+public class Joystick extends Activity {
+
+	public void onCreate(Bundle savedInstanceState){
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.activity2);
+	}
+}

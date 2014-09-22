@@ -1,0 +1,37 @@
+package com.example.tetra_joystick;
+
+import java.io.IOException;
+import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
+import java.util.ArrayList;
+import java.util.UUID;
+
+import android.app.ListActivity;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
+import android.content.BroadcastReceiver;
+import android.content.Context;
+import android.content.Intent;
+import android.content.IntentFilter;
+import android.util.Log;
+import android.view.View;
+
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ListView;
+import android.widget.Toast;
+public class Bluetooth extends ListActivity {
+	
+	public static final String TAG = "Bluetooth";
+	public static final int ENABLE_BLUETOOTH = 1;
+	
+	public BluetoothAdapter mBluetoothAdapter;
+	public ArrayList<BluetoothDevice> btDeviceList = new ArrayList<BluetoothDevice>();
+	public BluetoothSocket clientSocket;
+	public BroadcastReceiver discoveryMonitor;
+	
+	public ArrayAdapter<String> mArrayAdapter;
+	public Button buttonToggle;
+	
+}
